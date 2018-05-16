@@ -13,6 +13,7 @@
 		7358133920AC2588006FB05B /* lemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7358133720AC2588006FB05B /* lemon.xcdatamodeld */; };
 		7358133B20AC2589006FB05B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7358133A20AC2589006FB05B /* Assets.xcassets */; };
 		7358133E20AC2589006FB05B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7358133C20AC2589006FB05B /* LaunchScreen.storyboard */; };
+		7358134720AC2941006FB05B /* 人物ボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = 7358134620AC2941006FB05B /* 人物ボタン.png */; };
 		A0A3F84B4154A6608D9694DF /* Pods_lemon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9934F3EB8033EAC75ADE915 /* Pods_lemon.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		7358133A20AC2589006FB05B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7358133D20AC2589006FB05B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7358133F20AC2589006FB05B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7358134620AC2941006FB05B /* 人物ボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人物ボタン.png"; sourceTree = "<group>"; };
 		DA07F55D8176FEFC79243328 /* Pods-lemon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lemon.release.xcconfig"; path = "Pods/Target Support Files/Pods-lemon/Pods-lemon.release.xcconfig"; sourceTree = "<group>"; };
 		E9934F3EB8033EAC75ADE915 /* Pods_lemon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lemon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,12 +85,21 @@
 				7358133020AC2588006FB05B /* AppDelegate.swift */,
 				7358133220AC2588006FB05B /* ViewController.swift */,
 				7358133420AC2588006FB05B /* Main.storyboard */,
+				7358134520AC292F006FB05B /* images */,
 				7358133A20AC2589006FB05B /* Assets.xcassets */,
 				7358133C20AC2589006FB05B /* LaunchScreen.storyboard */,
 				7358133F20AC2589006FB05B /* Info.plist */,
 				7358133720AC2588006FB05B /* lemon.xcdatamodeld */,
 			);
 			path = lemon;
+			sourceTree = "<group>";
+		};
+		7358134520AC292F006FB05B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7358134620AC2941006FB05B /* 人物ボタン.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			files = (
 				7358133E20AC2589006FB05B /* LaunchScreen.storyboard in Resources */,
 				7358133B20AC2589006FB05B /* Assets.xcassets in Resources */,
+				7358134720AC2941006FB05B /* 人物ボタン.png in Resources */,
 				7358133620AC2588006FB05B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +346,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VNAV5S2KU6;
 				INFOPLIST_FILE = lemon/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.88company.lemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -350,7 +365,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VNAV5S2KU6;
 				INFOPLIST_FILE = lemon/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.88company.lemon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
